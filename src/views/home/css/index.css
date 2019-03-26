@@ -1,0 +1,41 @@
+.body {
+  margin: 0 auto;
+}
+
+.nav {
+  font-size: .32rem;
+  font-weight: bold;
+  color: black;
+  border-bottom: 1px solid #ccc;
+}
+
+
+.nav.topbar {
+  height: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.nav .companyName{
+  margin-left: 3rem;
+  font-size: .5rem;
+}
+
+.nav .navLeft{
+  height: 1rem;
+  line-height: 1rem;
+}
+
+.nav .navRight {
+  position: absolute;
+  right: 0;
+}
+
+.nav .navRight:hover{
+  cursor: pointer;
+  color: red;
+}
+
+.nav .navRight img{
+  margin-right: .1rem;
+}
+
