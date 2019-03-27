@@ -26,6 +26,7 @@ export default {
       productImg: '',
       productName: '',
       downLoadUrl: '',
+      goodsList: [],
     }
   },
   created() {
@@ -59,7 +60,7 @@ export default {
           this.productName = this.productId.toUpperCase() + '不锈钢接线盒'
         }
       }
-    }
+    },
   },
   watch: {
     "$route" (to, from) {
