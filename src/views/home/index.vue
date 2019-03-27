@@ -4,11 +4,11 @@
     <!-- 主要商品列表 -->
     <div class="goodsList">
       <ul>
-        <li @click.stop="goodsDetail('sb8')">
-          <div class="goodsItem"><img src="../../../static/img/goods/sb8.png" alt=""></div>
-          <div class="goodsInfo"><span>SB8悬臂梁式传感器</span></div>
+        <li v-for="(item, index) in goodsList" :key="index" @click.stop="goodsDetail(item)">
+          <div class="goodsItem"><img :src="item.imgUrl" alt=""></div>
+          <div class="goodsInfo"><span v-text="item.goodsName"></span></div>
         </li>
-        <li @click.stop="goodsDetail('slb')">
+        <!-- <li @click.stop="goodsDetail('slb')">
           <div class="goodsItem"><img src="../../../static/img/goods/slb.png" alt=""></div>
           <div class="goodsInfo"><span>SLB悬臂梁式传感器</span></div>
         </li>
@@ -47,7 +47,7 @@
         <li @click.stop="goodsDetail('keex-6')">
           <div class="goodsItem"><img src="../../../static/img/goods/keex-6.png" alt=""></div>
           <div class="goodsInfo"><span>KEEX-6接线盒</span></div>
-        </li>
+        </li> -->
       </ul>
     </div>
     <t-bottom></t-bottom>
@@ -55,17 +55,30 @@
 </template>
 
 <script>
+import api from './api'
+
 export default {
   data() {
     return {
-
+      goodsList: [],
     }
   },
   methods: {
     goodsDetail(id) {
       this.$router.push({path: '/detail/' + id})
-    }
-  }
+    },
+    queryAll() {
+      api.queryList().then(res => {
+        console.log(res)
+        if (res.body.resCode == "00100000") {
+          this.goodsList = res.body.obj
+        }
+      })
+    },
+  },
+  created() {
+    this.queryAll()
+  },
 }
 </script>
 
