@@ -20,7 +20,7 @@ export default {
   },
   methods: {
     concatUs() {
-      this.$router.push({path: '/concat'})
+      this.$router.push({path: '/contact'})
     }
   }
 }
