@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
 import home from '@/views/home'
 import concat from '@/views/concat'
 import detail from '@/views/detail'
@@ -19,8 +18,8 @@ export default new Router({
       component: home
     },
     {
-      path: '/concat',
-      name: 'concat',
+      path: '/contact',
+      name: 'contact',
       component: concat
     },
     {

@@ -6,7 +6,7 @@
       <ul>
         <li @click.stop="goodsDetail('sb8')">
           <div class="goodsItem"><img src="../../../static/img/goods/sb8.png" alt=""></div>
-          <div class="goodsInfo"><span>SB8传感器为悬臂梁传感器</span></div>
+          <div class="goodsInfo"><span>SB8悬臂梁式传感器</span></div>
         </li>
         <li @click.stop="goodsDetail('slb')">
           <div class="goodsItem"><img src="../../../static/img/goods/slb.png" alt=""></div>
@@ -22,19 +22,19 @@
         </li>
         <li @click.stop="goodsDetail('pc60')">
           <div class="goodsItem"><img src="../../../static/img/goods/pc60.png" alt=""></div>
-          <div class="goodsInfo"><span>pc60单点称重传感器</span></div>
+          <div class="goodsInfo"><span>PC60单点称重传感器</span></div>
         </li>
         <li @click.stop="goodsDetail('pc42')">
           <div class="goodsItem"><img src="../../../static/img/goods/pc42.png" alt=""></div>
-          <div class="goodsInfo"><span>pc42单点称重传感器</span></div>
-        </li>
-        <li @click.stop="goodsDetail('52-30')">
-          <div class="goodsItem"><img src="../../../static/img/goods/52-30.png" alt=""></div>
-          <div class="goodsInfo"><span>52-30称重模块</span></div>
+          <div class="goodsInfo"><span>PC42单点称重传感器</span></div>
         </li>
         <li @click.stop="goodsDetail('52-20')">
           <div class="goodsItem"><img src="../../../static/img/goods/52-20.png" alt=""></div>
           <div class="goodsInfo"><span>52-20称重模块</span></div>
+        </li>
+        <li @click.stop="goodsDetail('52-30')">
+          <div class="goodsItem"><img src="../../../static/img/goods/52-30.png" alt=""></div>
+          <div class="goodsInfo"><span>52-30称重模块</span></div>
         </li>
         <li @click.stop="goodsDetail('55-01-10')">
           <div class="goodsItem"><img src="../../../static/img/goods/55-01-10.png" alt=""></div>
